@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">YellaDriver</string>
+    <string name="yalla_job_number">Job #0099</string>
+    <string name="yalla_job_order_title">Orders : </string>
+    <string name="yalla_job_date">July 20, 2021</string>
+    <string name="yalla_card_address">Building No 268, Street 280,Zone 55,
+1st Floor(Above Royal Toys),Al Furousia Street Muaither,
+Doha, Qatar 63402</string>
+    <string name="yalla_job_order_distance_title">Distance : </string>
+    <string name="region_text">Region</string>
+    <string name="region_text_value">Qatar</string>
+    <string name="vehicle_details_text">Vehicle Details</string>
+    <string name="textView_vehicle_details_text">SUV Hyundai Creta</string>
+    <string name="how_to_use">How to use</string>
+    <string name="feedback">Feedback</string>
+    <string name="chat_customer_care">Chat with Customer care</string>
+    <string name="chat_warehouse">Chat with Warehouse</string>
+    <string name="call_custome">Call \n Customer Care</string>
+    <string name="call_warehouse">Call Warehouse</string>
+
 </resources>

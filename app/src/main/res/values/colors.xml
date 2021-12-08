@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="card_corner">#5B6F99</color>
+    <color name="card_corner_green">#59DA90</color>
+    <color name="card_text_black">#141414</color>
+    <color name="card_text_purple">#6E59DA</color>
+    <color name="card_text_address_black">#3E3E3E</color>
+    <color name="yella_settings_color">#6E59DA</color>
+    <color name="call_button_color_customer_care">#F58626</color>
+    <color name="call_button_color_warehouse">#16A9EA</color>
 </resources>

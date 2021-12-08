@@ -1,160 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_width="359dp"
+    android:layout_height="270dp">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
+        android:layout_width="359dp"
+        android:layout_height="270dp"
         android:layout_margin="10dp"
-        android:layout_height="wrap_content"
+        android:background="@color/white"
         app:cardCornerRadius="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/teal_700">
-
-            <TextView
-                android:id="@+id/textview_order_number"
-                android:layout_width="30dp"
-                android:layout_height="20dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:background="@drawable/bubble_box_top_left"
-                android:text="03"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:id="@+id/textview_order_payment_method"
-                android:layout_width="100dp"
-                android:layout_height="20dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/bubble_box_top_right"
-                android:text="Card Payment"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:id="@+id/textview_order_delivery_location"
-                android:layout_width="60dp"
-                android:layout_height="20dp"
-                android:layout_below="@+id/textview_order_payment_method"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/bubble_box_top_right"
-                android:text="Musither"
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
-
-            <TextView
-                android:id="@+id/textview_order_id_text"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_below="@+id/textview_order_delivery_location"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="10dp"
-                android:text="Order "
-                android:textColor="@color/white"
-                android:textSize="10sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textview_order_id_value"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_below="@+id/textview_order_delivery_location"
-                android:layout_toRightOf="@+id/textview_order_id_text"
-                android:text="#13452455"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="10sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textview_order_itemcount_text"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_below="@+id/textview_order_id_text"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="10dp"
-                android:text="Items : "
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="10sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textview_order_itemcount"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_below="@+id/textview_order_id_value"
-                android:layout_toRightOf="@+id/textview_order_itemcount_text"
-                android:text="08"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="10sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textview_order_total_amount_text"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_below="@+id/textview_order_itemcount_text"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="10dp"
-                android:text="Total Amount : QAR "
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="10sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:id="@+id/textview_order_total_amount"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_below="@+id/textview_order_itemcount"
-                android:layout_toRightOf="@+id/textview_order_total_amount_text"
-                android:text="500.00"
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="10sp"
-                android:textStyle="bold" />
-
-            <View
-                android:id="@+id/viewSeparator"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_below="@+id/textview_order_total_amount"
-                android:background="@color/white" />
-
-            <TextView
-                android:id="@+id/textview_order_shippingAddress_text"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:layout_below="@+id/viewSeparator"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="10dp"
-                android:paddingTop="5dp"
-                android:text="Shipping Address "
-                android:textAlignment="center"
-                android:textColor="@color/white"
-                android:textSize="12sp"
-                android:textStyle="bold"
-                android:layout_marginBottom="15dp"/>
+            android:background="@color/white">
 
             <ImageView
                 android:id="@+id/imageView_order_upDown"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingTop="5dp"
                 android:layout_below="@+id/viewSeparator"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/ic_baseline_keyboard_arrow_down_24" />
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="18dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/ic_baseline_expand_less_24" />
 
             <RelativeLayout
                 android:id="@+id/relativeHiddenView"
@@ -166,24 +37,160 @@
                 <TextView
                     android:id="@+id/address1"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentLeft="true"
-                    android:lines="4"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="50dp"
+                    android:lines="3"
                     android:maxLines="4"
-                    android:textColor="@color/white"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt "></TextView>
-                <TextView
-                    android:id="@+id/textview_order_priority"
-                    android:layout_width="100dp"
-                    android:layout_height="20dp"
-                    android:layout_below="@+id/address1"
-                    android:layout_alignParentRight="true"
-                    android:background="@drawable/bubble_box_right_bottom"
-                    android:text="High Priority"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="10sp" />
+                    android:text="@string/yalla_card_address"
+                    android:textColor="@color/card_text_address_black"></TextView>
+
             </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textview_order_number"
+                android:layout_width="50dp"
+                android:layout_height="37dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bubble_box_top_left"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
+                android:text="03"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textview_order_payment_method"
+                android:layout_width="137dp"
+                android:layout_height="37dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bubble_box_top_right"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center"
+                android:text="Card Payment"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/textview_order_delivery_location"
+                android:layout_width="93dp"
+                android:layout_height="21dp"
+                android:layout_below="@+id/textview_order_payment_method"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/bubble_box_top_right_green"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center"
+                android:text="Musither"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/textview_order_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/textview_order_delivery_location"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Order "
+                android:textColor="@color/card_text_black"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:id="@+id/textview_order_id_value"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/textview_order_delivery_location"
+                android:layout_toRightOf="@+id/textview_order_id_text"
+                android:fontFamily="@font/rubik_medium"
+                android:text="#13452455"
+                android:textAlignment="center"
+                android:textColor="@color/card_text_black"
+                android:textSize="17sp"
+                />
+
+            <TextView
+                android:id="@+id/textview_order_itemcount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/textview_order_id_text"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Items : "
+                android:textAlignment="center"
+                android:textColor="@color/card_text_address_black"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_order_itemcount"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_below="@+id/textview_order_id_value"
+                android:layout_toRightOf="@+id/textview_order_itemcount_text"
+                android:text="08"
+                android:textAlignment="center"
+                android:textColor="@color/card_text_address_black"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_order_total_amount_text"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="14dp"
+
+                android:layout_below="@+id/textview_order_itemcount_text"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Total Amount : QAR "
+                android:textAlignment="center"
+                android:textColor="@color/card_text_purple"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/textview_order_total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="14dp"
+                android:layout_below="@+id/textview_order_itemcount"
+                android:layout_toRightOf="@+id/textview_order_total_amount_text"
+                android:fontFamily="@font/rubik_medium"
+                android:text="500.00"
+                android:textAlignment="center"
+                android:textColor="@color/card_text_purple"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textview_order_shippingAddress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/viewSeparator"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Shipping Address "
+                android:textAlignment="center"
+                android:textColor="@color/card_text_black"
+                android:textSize="17sp" />
+
+            <View
+                android:id="@+id/viewSeparator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/textview_order_total_amount"
+                android:background="@color/white" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>

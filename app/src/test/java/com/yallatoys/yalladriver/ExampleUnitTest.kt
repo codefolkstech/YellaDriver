@@ -1,4 +1,4 @@
-package com.yellatoys.yelladriver
+package com.yallatoys.yalladriver
 
 import org.junit.Test
 
