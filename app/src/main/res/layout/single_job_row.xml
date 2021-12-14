@@ -1,21 +1,102 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="359dp"
-    android:layout_height="270dp">
+    android:layout_width="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="16dp"
+    android:gravity="center_horizontal">
+    <View
+        android:id="@+id/viewInitialLine"
+        android:layout_width="2dp"
+        android:layout_height="16dp"
+        android:background="@color/yellow"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        />
+    <ImageView
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/tick_circular_yellow"
+        android:layout_gravity="center_horizontal"/>
+    <View
+        android:id="@+id/timeLinePath"
+        android:layout_width="2dp"
+        android:layout_height="match_parent"
+        android:background="@color/yellow"
+        android:layout_gravity="center_horizontal"/>
 
+</LinearLayout>
     <androidx.cardview.widget.CardView
-        android:layout_width="359dp"
-        android:layout_height="270dp"
-        android:layout_margin="10dp"
-        android:background="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:elevation="5dp"
+        app:cardElevation="5dp"
         app:cardCornerRadius="10dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white">
+            android:background="@drawable/single_job_bg_yellow">
+            <TextView
+                android:id="@+id/textview_order_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/order_number_bg_yellow"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
+                android:text="03"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/textview_order_payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/payment_bg_yellow"
+                android:fontFamily="@font/rubik_regular"
+                android:textStyle="normal"
+                android:gravity="center"
+                android:text="@string/card_payment"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
 
+            <TextView
+                android:id="@+id/textview_order_delivery_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:layout_below="@+id/textview_order_payment_method"
+                android:layout_alignParentEnd="true"
+                android:drawableEnd="@drawable/location_pin"
+                android:drawablePadding="10dp"
+                android:background="@drawable/bubble_box_top_right_green"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxLength="8"
+                android:text="Musither"
+                android:textColor="@color/white"
+                android:textSize="11sp" />
             <ImageView
                 android:id="@+id/imageView_order_upDown"
                 android:layout_width="wrap_content"
@@ -32,15 +113,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/textview_order_shippingAddress_text"
-                android:visibility="visible">
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/address1"
                     android:layout_width="wrap_content"
                     android:layout_height="100dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginBottom="10dp"
                     android:layout_marginRight="50dp"
+                    android:layout_marginBottom="10dp"
                     android:lines="3"
                     android:maxLines="4"
                     android:text="@string/yalla_card_address"
@@ -48,44 +129,11 @@
 
             </RelativeLayout>
 
-            <TextView
-                android:id="@+id/textview_order_number"
-                android:layout_width="50dp"
-                android:layout_height="37dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:background="@drawable/bubble_box_top_left"
-                android:fontFamily="@font/rubik_medium"
-                android:gravity="center"
-                android:text="03"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/textview_order_payment_method"
-                android:layout_width="137dp"
-                android:layout_height="37dp"
-                android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/bubble_box_top_right"
-                android:fontFamily="@font/rubik_regular"
-                android:gravity="center"
-                android:text="Card Payment"
-                android:textColor="@color/white"
-                android:textSize="13sp" />
 
-            <TextView
-                android:id="@+id/textview_order_delivery_location"
-                android:layout_width="93dp"
-                android:layout_height="21dp"
-                android:layout_below="@+id/textview_order_payment_method"
-                android:layout_alignParentRight="true"
-                android:background="@drawable/bubble_box_top_right_green"
-                android:fontFamily="@font/rubik_regular"
-                android:gravity="center"
-                android:text="Musither"
-                android:textColor="@color/white"
-                android:textSize="11sp" />
+
+
+
 
             <TextView
                 android:id="@+id/textview_order_id_text"
@@ -190,7 +238,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="1dp"
                 android:layout_below="@+id/textview_order_total_amount"
-                android:background="@color/white" />
+                android:background="@color/yellow" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
