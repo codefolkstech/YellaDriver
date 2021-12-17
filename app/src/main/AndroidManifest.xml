@@ -9,18 +9,29 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.YellaDriver">
-        <activity android:name=".RecyclerTestingActivity">
+        <activity android:name=".HomeActivity"
+            android:theme="@style/Theme.MaterialComponents.Light">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".JobNotificationActivity" />
+        <activity android:name=".JobStatusActivity" />
+        <activity android:name=".JobActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".MyProfileActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
 
         </activity>
+        <activity android:name=".RecyclerTestingActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar" />
     </application>
 
 </manifest>
