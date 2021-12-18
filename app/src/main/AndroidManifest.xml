@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.YellaDriver">
         <activity android:name=".HomeActivity"
-            android:theme="@style/Theme.MaterialComponents.Light">
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
