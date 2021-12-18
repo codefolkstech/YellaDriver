@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="13dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notification_job_topcard"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/txtNotifyJobNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:fontFamily="@font/rubik_medium"
+                android:text="Job #0099"
+                android:textColor="@color/notification_job_text"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/txtNotifyJobDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/rubik_regular"
+                android:text="July 20, 2021"
+                android:textColor="@color/notification_job_text"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageViewOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNotifyJobNo"
+                android:layout_marginTop="17dp"
+                android:src="@drawable/orders" />
+
+            <TextView
+                android:id="@+id/txtOrderNotifyText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNotifyJobNo"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/imageViewOrder"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Orders : "
+                android:textColor="@color/notification_job_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtOrderNotifyCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNotifyJobNo"
+                android:layout_marginTop="16dp"
+                android:layout_toRightOf="@+id/txtOrderNotifyText"
+                android:fontFamily="@font/rubik_regular"
+                android:text="8"
+                android:textColor="@color/notification_job_text"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageViewLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewOrder"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:id="@+id/txtOrderDistanceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewOrder"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/imageViewLocation"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Distance : "
+                android:textColor="@color/notification_job_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtOrdernotifyDistance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewOrder"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/txtOrderDistanceText"
+                android:fontFamily="@font/rubik_regular"
+                android:text="28 KMS"
+                android:textColor="@color/notification_job_text"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageViewEarnings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageViewOrder"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/location1" />
+
+            <TextView
+                android:id="@+id/txtOrderEarningsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewOrder"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/imageViewLocation"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Distance : "
+                android:textColor="@color/notification_job_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtOrdernotifyEarnings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewOrder"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/txtOrderDistanceText"
+                android:fontFamily="@font/rubik_regular"
+                android:text="28 KMS"
+                android:textColor="@color/notification_job_text"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageViewEarningsNotify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewOrder"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/txtOrdernotifyEarnings"
+                android:src="@drawable/earnings1" />
+
+            <TextView
+                android:id="@+id/txtOrdernotifyEarningsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewOrder"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/imageViewEarningsNotify"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Earnings : "
+                android:textColor="@color/notification_job_text"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/txtOrdernotifyEarningsValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imageViewOrder"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@+id/txtOrdernotifyEarningsText"
+                android:fontFamily="@font/rubik_regular"
+                android:text="QAR 15 "
+                android:textColor="@color/notification_job_text"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:id="@+id/layoutAccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/accept_button"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_check_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_regular"
+                    android:text="Accept"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/reject_button"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_close_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_regular"
+                    android:text="Reject"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

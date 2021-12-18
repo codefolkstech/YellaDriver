@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yella_settings_color">
+
+
+    <ImageView
+        android:id="@+id/imageViewHowTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_vehicle_details"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="52dp"
+        android:layout_marginRight="62dp"
+        android:src="@drawable/ic_baseline_chevron_right_24" />
+
+    <ImageView
+        android:id="@+id/imageViewFeedBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewHowTo"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="62dp"
+        android:src="@drawable/ic_baseline_chevron_right_24" />
+
+    <ImageView
+        android:id="@+id/ImageViewChatCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_feedback"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/chat_icon_32" />
+
+    <ImageView
+        android:id="@+id/imageViewCustomerCare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewFeedBack"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="62dp"
+        android:src="@drawable/ic_baseline_chevron_right_24" />
+
+    <ImageView
+        android:id="@+id/ImageViewChatWareHouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ImageViewChatCustomer"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="45dp"
+        android:src="@drawable/chat_icon_32" />
+
+    <ImageView
+        android:id="@+id/imageViewWareHouse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageViewCustomerCare"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="62dp"
+        android:src="@drawable/ic_baseline_chevron_right_24" />
+
+
+
+    <LinearLayout
+        android:layout_width="130dp"
+        android:layout_height="106dp"
+        android:layout_below="@+id/ImageViewChatWareHouse"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_toRightOf="@+id/linearCustomer"
+        android:background="@drawable/call_button_ware"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/viber" />
+
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="61dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="@string/call_warehouse"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="@string/region_text"
+        android:textColor="@color/white"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/textView_region_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_region"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/rubik_regular"
+        android:text="@string/region_text_value"
+        android:textColor="@color/ghost_white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView_vehicle_details_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_region_value"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="@string/vehicle_details_text"
+        android:textColor="@color/white"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/textView_vehicle_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_vehicle_details_text"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="7dp"
+        android:fontFamily="@font/rubik_regular"
+        android:text="@string/textView_vehicle_details_text"
+        android:textColor="@color/ghost_white"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView_howtoUse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_vehicle_details"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="45dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="@string/how_to_use"
+        android:textColor="@color/white"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/textView_feedback"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_howtoUse"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="@string/feedback"
+        android:textColor="@color/white"
+        android:textSize="27sp" />
+
+    <TextView
+        android:id="@+id/textView_custome_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_below="@+id/textView_feedback"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="33dp"
+        android:layout_toRightOf="@+id/ImageViewChatCustomer"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Chat with\nCustomer care"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textView_warehouse_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="68dp"
+        android:layout_below="@+id/ImageViewChatCustomer"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="33dp"
+        android:layout_toRightOf="@+id/ImageViewChatWareHouse"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Chat with\nWarehouse"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <View
+        android:id="@+id/viewline"
+        android:layout_width="300dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/textView_custome_chat"
+        android:layout_centerHorizontal="true"></View>
+
+
+</RelativeLayout>

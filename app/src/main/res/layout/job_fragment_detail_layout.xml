@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="402dp"
+        android:layout_height="112dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        app:cardBackgroundColor="@color/card_text_purple"
+        app:cardCornerRadius="9dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textview_job_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/rubik_medium"
+                android:gravity="center"
+                android:text="@string/yalla_job_number"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/textview_job_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="32dp"
+                android:fontFamily="@font/rubik_regular"
+                android:gravity="center"
+                android:text="@string/yalla_job_date"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imageviewOrder"
+                android:layout_width="11dp"
+                android:layout_height="12dp"
+                android:layout_below="@+id/textview_job_number"
+                android:src="@drawable/path_icon"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="17dp" />
+            <TextView
+                android:id="@+id/textview_job_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yalla_job_order_title"
+                android:fontFamily="@font/rubik_regular"
+                android:textSize="14sp"
+                android:textColor="@color/white"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/textview_job_number"
+                android:layout_toRightOf="@+id/imageviewOrder"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:textSize="14sp"
+                android:text="5"
+                android:textColor="@color/white"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/textview_job_number"
+                android:layout_toRightOf="@+id/textview_job_title"
+                ></TextView>
+            <ImageView
+                android:id="@+id/imageviewLocation"
+                android:layout_width="11dp"
+                android:layout_height="12dp"
+                android:layout_below="@+id/imageviewOrder"
+                android:src="@drawable/location"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="14dp"
+                ></ImageView>
+            <TextView
+                android:id="@+id/textviewDistanceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/yalla_job_order_distance_title"
+                android:fontFamily="@font/rubik_regular"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textview_job_title"
+                android:layout_toRightOf="@+id/imageviewOrder"/>
+            <TextView
+                android:id="@+id/textview_distance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:textSize="14sp"
+                android:text="28 KMS"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textview_job_title"
+                android:layout_toRightOf="@+id/textviewDistanceText"
+                ></TextView>
+            <ImageView
+                android:id="@+id/imageviewEarnings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/earnings"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="70dp"
+                android:layout_below="@+id/textview_job_title"
+                android:layout_toRightOf="@id/textview_distance_value"/>
+            <TextView
+                android:id="@+id/textview_earnings_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:textSize="14sp"
+                android:text="Earnings :"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/textview_job_title"
+                android:layout_toRightOf="@+id/imageviewEarnings"
+                ></TextView>
+            <TextView
+                android:id="@+id/textview_earnings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/rubik_regular"
+                android:textSize="14sp"
+                android:text="QAR 15"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@+id/textview_job_title"
+                android:layout_toRightOf="@+id/textview_earnings_text"
+                ></TextView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
+</LinearLayout>
