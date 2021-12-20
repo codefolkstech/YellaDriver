@@ -6,13 +6,23 @@
     android:layout_height="match_parent"
     android:background="@color/main_background"
     tools:context=".HomeActivity">
-    <include
-        android:id="@+id/customToolbar"
-        layout="@layout/custom_toolbar" />
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="top"
+        android:theme="@style/ThemeOverlay.AppCompat"
+        app:titleTextAppearance="@font/lato_regular"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        layout="@layout/custom_toolbar"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
     <androidx.fragment.app.FragmentContainerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/nav_host_fragment"
+        android:paddingTop="?attr/actionBarSize"
+        android:clipToPadding="false"
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:navGraph="@navigation/nav_graph"
         app:defaultNavHost="true"

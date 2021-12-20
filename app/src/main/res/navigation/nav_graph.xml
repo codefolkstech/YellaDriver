@@ -15,4 +15,8 @@
         android:id="@+id/myProfileFragment"
         android:name="com.yallatoys.yalladriver.view.fragments.MyProfileFragment"
         android:label="MyProfileFragment" />
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.yallatoys.yalladriver.view.fragments.NotificationFragment"
+        android:label="NotificationFragment" />
 </navigation>

@@ -18,5 +18,6 @@ Doha, Qatar 63402</string>
     <string name="call_customer">Call \n Customer Care</string>
     <string name="call_warehouse">Call Warehouse</string>
     <string name="card_payment">Card Payment</string>
+    <string name="status">Online</string>
 
 </resources>

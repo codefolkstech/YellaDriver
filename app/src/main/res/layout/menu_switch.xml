@@ -10,7 +10,7 @@
     android:textOn="On"
     android:textOff="Off"
     android:textColor="#f00"
-    android:padding="20dp"
+    android:padding="10dp"
     android:gravity="center"
     android:track="@drawable/switch_background"
 />

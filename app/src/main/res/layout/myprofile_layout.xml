@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/main_background">
 
     <ImageButton
@@ -25,10 +25,10 @@
 
     <RelativeLayout
         android:id="@+id/linearProfile"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="60dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/layout_corner_round"
         android:padding="15dp"
@@ -38,9 +38,9 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
-            android:id="@+id/imageChangePassword"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:id="@+id/imageMyProfile"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
             android:layout_below="@+id/editProfileLicenseLayout"
             android:layout_alignParentRight="true"
             android:layout_marginTop="20dp"
@@ -54,7 +54,6 @@
             android:layout_below="@+id/textviewOccupation"
             android:layout_alignStart="@+id/editProfileEmailLayout"
             android:layout_alignEnd="@+id/editProfileEmailLayout"
-
             android:weightSum="2">
 
             <LinearLayout
@@ -63,8 +62,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="0dp"
-                android:background="@drawable/call_button"
                 android:layout_weight="1"
+                android:background="@drawable/call_button"
                 android:orientation="vertical"
                 android:padding="15dp">
 
@@ -97,9 +96,9 @@
                 android:layout_below="@+id/textviewOccupation"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
+                android:layout_weight="1"
                 android:background="@drawable/call_button_ware"
                 android:orientation="vertical"
-                android:layout_weight="1"
                 android:padding="15dp">
 
                 <TextView
