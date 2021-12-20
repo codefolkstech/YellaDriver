@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/layout_corner_round"
         android:padding="15dp"
@@ -48,75 +48,106 @@
             android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
 
         <LinearLayout
-            android:id="@+id/linearEarning"
-            android:layout_width="140dp"
+            android:id="@+id/lineartotal"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/textviewOccupation"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="0dp"
-            android:background="@drawable/call_button"
-            android:orientation="vertical"
-            android:padding="5dp">
+            android:layout_alignStart="@+id/editProfileEmailLayout"
+            android:layout_alignEnd="@+id/editProfileEmailLayout"
 
+            android:weightSum="2">
 
-            <TextView
-                android:layout_width="120dp"
+            <LinearLayout
+                android:id="@+id/linearEarning"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/rubik_medium"
-                android:text="Total Earnings"
-                android:textColor="@color/white"
-                android:textSize="13dp" />
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="0dp"
+                android:background="@drawable/call_button"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="15dp">
 
-            <TextView
-                android:layout_width="120dp"
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="Total Earnings"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="201"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/textviewOccupation"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/rubik_medium"
-                android:text="201"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
+                android:layout_marginTop="30dp"
+                android:background="@drawable/call_button_ware"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:padding="15dp">
 
+                <TextView
+                    android:id="@+id/tvTotalJobs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="Total Jobs"
+                    android:textColor="@color/white"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="75"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
         </LinearLayout>
 
+
         <LinearLayout
-            android:layout_width="130dp"
+            android:id="@+id/layoutProfileSave"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/textviewOccupation"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginEnd="0dp"
-            android:layout_marginBottom="0dp"
-            android:layout_toRightOf="@+id/linearEarning"
-            android:background="@drawable/call_button_ware"
-            android:orientation="vertical"
-            android:padding="5dp">
+            android:layout_below="@id/textviewlogout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/job_accept_button"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="15dp">
 
             <TextView
-                android:id="@+id/tvTotalJobs"
-                android:layout_width="120dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/rubik_medium"
-                android:text="Total Jobs"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="@font/rubik_regular"
+                android:text="Save"
                 android:textColor="@color/white"
-                android:textSize="13dp" />
-
-            <TextView
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"
-                android:fontFamily="@font/rubik_medium"
-                android:text="75"
-                android:textColor="@color/white"
-                android:textSize="20dp" />
-
+                android:textSize="12sp" />
         </LinearLayout>
 
         <TextView
@@ -144,17 +175,6 @@
             android:textColor="@color/black"
             android:textSize="14sp" />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/textviewChangePassword"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/editProfileLicenseLayout"
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="25dp"
-            android:fontFamily="@font/rubik_medium"
-            android:text="Change Password"
-            android:textSize="15sp"></com.google.android.material.textview.MaterialTextView>
-
         <TextView
             android:id="@+id/textviewlogout"
             android:layout_width="wrap_content"
@@ -167,32 +187,18 @@
             android:textColor="@color/call_button_color_customer_care"
             android:textSize="17sp" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/saveProfileButton"
-            android:layout_width="300dp"
-            android:layout_height="65dp"
-            android:layout_below="@+id/textviewlogout"
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:backgroundTint="@color/card_text_purple"
-            android:layout_marginRight="10dp"
-            android:layout_centerInParent="true"
-            android:textAllCaps="false"
-            android:text="Save"
-            />
-
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/editProfileEmailLayout"
             style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/linearEarning"
+            android:layout_below="@id/lineartotal"
             android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
             android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
             android:hint="Email"
-            app:boxStrokeColor="@color/color_text_underline"
             app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/lines_color"
             app:endIconDrawable="@drawable/ic_baseline_edit_24"
             app:endIconMode="custom"
             app:hintTextColor="@color/hint_color">
@@ -214,8 +220,8 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:hint="phone"
-            app:boxStrokeColor="@color/color_text_underline"
             app:boxBackgroundColor="@color/white"
+            app:boxStrokeColor="@color/lines_color"
             app:endIconDrawable="@drawable/ic_baseline_edit_24"
             app:endIconMode="custom"
             app:hintTextColor="@color/hint_color">
@@ -224,8 +230,7 @@
                 android:id="@+id/editProfilePhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/rubik_regular"
-                />
+                android:fontFamily="@font/rubik_regular" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -237,19 +242,17 @@
             android:layout_below="@id/editProfilePhoneLayout"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
-            app:boxStrokeColor="@color/color_text_underline"
             android:hint="Qatar ID"
             app:boxBackgroundColor="@color/white"
-            app:endIconDrawable="@drawable/ic_baseline_edit_24"
-            app:endIconMode="custom"
+            app:boxStrokeColor="@color/lines_color"
+            app:endIconMode="password_toggle"
             app:hintTextColor="@color/hint_color">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editProfileQatarID"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/rubik_regular"
-                />
+                android:fontFamily="@font/rubik_regular" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -263,10 +266,10 @@
             android:layout_marginRight="15dp"
             android:hint="License"
             app:boxBackgroundColor="@color/white"
-            app:endIconDrawable="@drawable/ic_baseline_edit_24"
-            app:endIconMode="custom"
-            app:boxStrokeColor="@color/color_text_underline"
+            app:boxStrokeColor="@color/lines_color"
+            app:endIconMode="password_toggle"
             app:hintTextColor="@color/hint_color">
+
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editProfileLicense"
                 android:layout_width="match_parent"
@@ -276,6 +279,17 @@
                 />
 
         </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/textviewChangePassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editProfileLicenseLayout"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Change Password"
+            android:textSize="15sp"></com.google.android.material.textview.MaterialTextView>
 
     </RelativeLayout>
 

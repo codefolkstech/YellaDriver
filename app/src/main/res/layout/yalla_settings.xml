@@ -66,7 +66,39 @@
 
 
     <LinearLayout
-        android:layout_width="130dp"
+        android:id="@+id/linearCustomer"
+        android:layout_width="140dp"
+        android:layout_height="106dp"
+        android:layout_below="@+id/ImageViewChatWareHouse"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="10dp"
+        android:layout_alignStart="@+id/ImageViewChatWareHouse"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/call_button"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/viber" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/rubik_medium"
+            android:text="Call \nCustomer Care"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="140dp"
         android:layout_height="106dp"
         android:layout_below="@+id/ImageViewChatWareHouse"
         android:layout_marginLeft="30dp"
@@ -87,7 +119,7 @@
 
         <TextView
             android:layout_width="96dp"
-            android:layout_height="61dp"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/rubik_medium"
@@ -96,7 +128,6 @@
             android:textSize="16dp" />
 
     </LinearLayout>
-
     <TextView
         android:id="@+id/textView_region"
         android:layout_width="wrap_content"

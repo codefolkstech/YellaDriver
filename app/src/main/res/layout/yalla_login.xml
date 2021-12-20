@@ -50,20 +50,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <Button
-                android:id="@+id/btnLogin"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@+id/edittext_password_layout"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginRight="25dp"
-                android:layout_marginBottom="23dp"
-                android:padding="15dp"
-                android:background="@color/card_text_purple"
-                style="@style/Widget.MaterialComponents.Button"
-                android:text="Login"
-                android:textColor="@color/white" />
+
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/edittext_password_layout"
@@ -74,20 +61,19 @@
                 android:layout_marginLeft="25dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="25dp"
-                android:background="@color/white"
+                android:layout_marginBottom="10dp"
+
+                android:background="@drawable/edittext_rounded_corner"
                 android:hint="Password"
                 app:boxBackgroundMode="none"
-                app:boxCornerRadiusBottomEnd="10dp"
-                app:boxCornerRadiusBottomStart="10dp"
-                app:boxCornerRadiusTopEnd="10dp"
-                app:boxCornerRadiusTopStart="10dp"
                 app:endIconMode="password_toggle">
 
                 <!--this is the actual edit text which takes the input-->
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edittext_password"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
+                    android:layout_height="match_parent"
+                  />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -99,13 +85,11 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="23dp"
                 android:layout_marginEnd="25dp"
-                android:background="@color/white"
+                android:padding="1dp"
+                android:background="@drawable/edittext_rounded_corner"
                 android:hint="Enter your email or phone number"
                 app:boxBackgroundMode="none"
-                app:boxCornerRadiusBottomEnd="10dp"
-                app:boxCornerRadiusBottomStart="10dp"
-                app:boxCornerRadiusTopEnd="10dp"
-                app:boxCornerRadiusTopStart="10dp">
+              >
 
                 <!--this is the actual edit text which takes the input-->
                 <com.google.android.material.textfield.TextInputEditText
@@ -114,6 +98,27 @@
                     android:layout_height="match_parent" />
 
             </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:id="@+id/layoutJobListAccept"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/job_accept_button"
+                android:gravity="center"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:layout_below="@id/edittext_password_layout"
+                android:padding="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/rubik_regular"
+                    android:text="Login"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+            </LinearLayout>
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 

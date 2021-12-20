@@ -17,8 +17,8 @@ class LoginActivity : AppCompatActivity() {
         binding= YallaLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.apply {
-            btnLogin.setOnClickListener {
-                val intent = Intent(this@LoginActivity, JobNotificationActivity::class.java)
+            layoutJobListAccept.setOnClickListener {
+                val intent = Intent(this@LoginActivity, HomeActivity::class.java)
                 startActivity(intent)
             }
         }

@@ -7,4 +7,12 @@
         android:id="@+id/homeFragment"
         android:name="com.yallatoys.yalladriver.view.fragments.HomeFragment"
         android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.yallatoys.yalladriver.view.fragments.SettingsFragment"
+        android:label="SettingsFragment" />
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.yallatoys.yalladriver.view.fragments.MyProfileFragment"
+        android:label="MyProfileFragment" />
 </navigation>

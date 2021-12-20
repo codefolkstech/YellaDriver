@@ -19,4 +19,8 @@
         <item name="colorOnPrimary">@color/yellow</item>
     </style>
     <style name="AppTheme.AppBarOverlay" parent="Theme.MaterialComponents.DayNight" />
+    <style name="LoginTextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">#fff</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
 </resources>

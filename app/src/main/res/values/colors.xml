@@ -25,4 +25,5 @@
     <color name="hint_color">#D1D1D1</color>
     <color name="color_text_underline">#979797</color>
     <color name="notification_job_text">#383838</color>
+    <color name="lines_color">#BBC8C2</color>
 </resources>

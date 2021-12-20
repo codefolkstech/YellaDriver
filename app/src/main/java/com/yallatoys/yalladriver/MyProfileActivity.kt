@@ -14,10 +14,10 @@ class MyProfileActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.apply {
 
-            saveProfileButton.setOnClickListener {
-                val intent = Intent(this@MyProfileActivity, JobActivity::class.java)
-                startActivity(intent)
-            }
+//            saveProfileButton.setOnClickListener {
+//                val intent = Intent(this@MyProfileActivity, JobActivity::class.java)
+//                startActivity(intent)
+//            }
         }
     }
 }
