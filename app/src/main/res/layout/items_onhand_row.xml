@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ellipse_blue" />
+
+
+            <View
+                android:id="@+id/viewInitialLine"
+                android:layout_width="2dp"
+                android:layout_height="72dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/lines_color"
+                android:visibility="visible" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ellipse_green" />
+            <View
+                android:id="@+id/timeLinePath"
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/lines_color" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="85dp"
+            android:background="@color/lines_color"
+            android:visibility="visible" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="5dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <RelativeLayout
+                android:id="@+id/jobrelativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_job_bg_purple">
+
+
+                <TextView
+                    android:id="@+id/tv_item_returned_OrderName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textview_order_delivery_location"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="Delsit Single Sofa Qatar  Animal \n online sho… "
+                    android:textAlignment="textStart"
+                    android:textColor="@color/card_text_black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_returned_Order_sku"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/tv_item_returned_OrderName"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/rubik_regular"
+                    android:text="ISKU : 123543534564767745 "
+                    android:textAlignment="center"
+                    android:textColor="@color/card_text_address_black"
+                    android:textSize="12sp"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_item_returned_Order_Quantity_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/viewSeparator"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/rubik_regular"
+                    android:text="Quantity :"
+                    android:textAlignment="center"
+                    android:textColor="@color/card_text_address_black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_item_returned_Order_Quantity_Value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/viewSeparator"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toRightOf="@id/tv_item_returned_Order_Quantity_text"
+                    android:fontFamily="@font/rubik_medium"
+                    android:text="01"
+                    android:textAlignment="center"
+                    android:textColor="@color/card_text_purple"
+                    android:textSize="14sp" />
+
+                <View
+                    android:id="@+id/viewSeparator"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_item_returned_Order_sku"
+                    android:background="@color/lines_color" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>
