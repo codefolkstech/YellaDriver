@@ -2,6 +2,7 @@ package com.yallatoys.yalladriver
 
 
 import android.graphics.Color.alpha
+import android.graphics.PorterDuff
 import android.os.Build
 import android.os.Bundle
 import android.view.Menu
@@ -53,12 +54,27 @@ class HomeActivity : AppCompatActivity() {
                 R.id.settingsFragment -> {
                     hideBottomNav()
 //                    hideActionBar()
+                    setstatuscolorblue()
+                    binding.toolbar.menu.clear()
                     binding.toolbar.setBackgroundColor(R.color.yella_settings_color)
                     binding.toolbar.title = ""
                 }
-                else -> {
+                R.id.homeFragment->{
+                    binding.toolbar.setTitleTextColor(R.color.black)
+                    binding.toolbar.title="  July 20, 2021"
                     binding.toolbar.setBackgroundColor(alpha(0))
-                    binding.toolbar.menu.hasVisibleItems()
+                    binding.toolbar.menu
+                    showBottomNav()
+                    showActionBar()
+                    setstatuscolor()
+                }
+                else -> {
+                    binding.toolbar.setTitleTextColor(R.color.yella_settings_color)
+                    binding.toolbar.setBackgroundColor(alpha(0))
+
+                    binding.toolbar.setBackgroundColor(alpha(0))
+                    binding.toolbar.menu
+                    setstatuscolor()
                     showBottomNav()
                     showActionBar()
                 }
@@ -68,10 +84,11 @@ class HomeActivity : AppCompatActivity() {
 
     }
 
-    //    private fun setCustomActionBar(){
+//    private fun setCustomActionBar() {
 //        setSupportActionBar(binding.customToolbar.toolbar)
 //        binding.customToolbar.tvTitle.text = "Test"
 //    }
+
     @Override
     override fun onSupportNavigateUp(): Boolean {
         return navController.navigateUp() || super.onSupportNavigateUp()
@@ -113,6 +130,14 @@ class HomeActivity : AppCompatActivity() {
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
             window.statusBarColor = this.resources.getColor(R.color.main_background)
+        }
+    }
+    fun setstatuscolorblue() {
+        if (Build.VERSION.SDK_INT >= 21) {
+            val window = this.window
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
+            window.statusBarColor = this.resources.getColor(R.color.yella_settings_color)
         }
     }
 }

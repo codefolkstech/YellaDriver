@@ -20,7 +20,7 @@
         app:showAsAction="always"/>
 
     <item
-        android:id="@+id/myProfileFragment"
+        android:id="@+id/totalEarningFragment"
         android:icon="@drawable/userprofile"
         android:title="My Profile"
         app:showAsAction="always"/>

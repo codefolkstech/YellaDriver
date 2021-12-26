@@ -6,6 +6,9 @@
     <string name="yalla_card_address">Building No 268, Street 280,Zone 55,
 1st Floor(Above Royal Toys),Al Furousia Street Muaither,
 Doha, Qatar 63402</string>
+    <string name="yalla_card_address2">Building No 2, Street 2,Zone 12,
+1st Floor(Above Royal Toys),Al Street,
+Doha, Qatar 63402</string>
     <string name="yalla_job_order_distance_title">Distance : </string>
     <string name="region_text">Region</string>
     <string name="region_text_value">Qatar</string>
@@ -19,5 +22,31 @@ Doha, Qatar 63402</string>
     <string name="call_warehouse">Call Warehouse</string>
     <string name="card_payment">Card Payment</string>
     <string name="status">Online</string>
-
+    <string name="hint"><font size="12">Hint!</font></string>
+    <string-array name="Months">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <string-array name="Quantity">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+    </string-array>
 </resources>

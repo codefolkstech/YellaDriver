@@ -26,4 +26,7 @@
     <color name="color_text_underline">#979797</color>
     <color name="notification_job_text">#383838</color>
     <color name="lines_color">#BBC8C2</color>
+    <color name="button_color">#6E47AF</color>
+    <color name="text_fade_color">#BCBCBC</color>
+    <color name="calendar_text">#535353</color>
 </resources>

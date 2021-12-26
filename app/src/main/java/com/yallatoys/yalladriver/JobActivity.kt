@@ -22,6 +22,7 @@ class JobActivity : AppCompatActivity() {
                 if(relativeHiddenView.visibility==View.VISIBLE){
                     relativeHiddenView.visibility=View.GONE
                imageViewOrderUpDown.setImageResource(R.drawable.ic_baseline_expand_more_24)
+
                 }else{
                     relativeHiddenView.visibility=View.VISIBLE
                     imageViewOrderUpDown.setImageResource(R.drawable.ic_baseline_expand_less_24)

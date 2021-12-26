@@ -8,12 +8,17 @@
     tools:context=".HomeActivity">
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
         android:background="@android:color/transparent"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_gravity="top"
+        app:layout_scrollFlags="scroll|enterAlways"
         android:theme="@style/ThemeOverlay.AppCompat"
         app:titleTextAppearance="@font/lato_regular"
+        android:elevation="0dp"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
         layout="@layout/custom_toolbar"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
@@ -55,7 +60,7 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_baseline_menu_24"
         android:background="@drawable/fab_drawable_shape"

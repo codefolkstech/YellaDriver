@@ -9,10 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.YellaDriver">
-        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".view.CalendarActivity">
+
+        </activity>
+        <activity android:name=".view.TotalEarningActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
         <activity
             android:name=".HomeActivity"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
         <activity android:name=".JobNotificationActivity" />
         <activity android:name=".JobStatusActivity" />
         <activity android:name=".JobActivity" />
@@ -21,13 +33,10 @@
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
         <activity
             android:name=".LoginActivity"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar" />
+        <activity
+            android:name=".view.TestActiivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"></activity>
     </application>
 
 </manifest>
